@@ -1,0 +1,53 @@
+body,html{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    width: 50%;
+}
+
+nav > ul{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    list-style-type: none;
+    background-color: #ccc;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+
+.maclass{
+    padding: 2em;
+}
+
+.div1{
+    width: 200px;
+    height: 150px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+div{
+    width: 120px;
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.elu{
+    align-self: flex-end;
+}
+

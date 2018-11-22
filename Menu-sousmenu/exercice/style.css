@@ -1,0 +1,140 @@
+*,html{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: indigo;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    background-color: brown;
+    width: 100%;
+    height: 200px;
+}
+
+nav{
+    background-color: navajowhite;
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 30px 30px;
+    margin: 0px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.sub li{
+    border-bottom: 1px solid white;
+}
+
+.sub li a{
+    padding: 20px 30px 20px 30px;
+}
+
+.sub li a{
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    color: white;
+
+}
+
+nav > ul{
+    padding: 0px;
+    margin: 0px;
+    border: 5px solid seagreen;
+}
+
+.sub{
+    display: none;
+}
+
+nav li:hover .sub{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    padding: 0px;
+    z-index: 1000;
+}
+
+nav li{
+    list-style-type: none;
+    border-right: 1px solid white;
+}
+
+nav>ul>li{
+    padding: 8px;
+    margin: 0px;
+    list-style-type: none;
+    float: left;
+    position: relative;
+}
+
+.sub{
+    padding: 0px;
+    margin: 0px;
+}
+
+.ulsub>li>a{
+    display: inline-block;
+    padding: 10px;
+    margin: 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid moccasin;
+}
+
+.div-un{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    border: 5px solid purple;
+    transition: width 2s, background-color 4s;
+}
+
+.div-un:hover{
+    width: 500px;
+    background-color: powderblue;
+}
+
+.div-deux{
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    position: relative;
+    animation: chgt-couleur 4s infinite ;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@-webkit-keyframes chgt-couleur {
+    0%{background-color: purple; top: -500px; left: 500px; -webkit-transform: rotate(-1000deg);}
+    25%{background-color: blue; top: 0px; left: 500px; -webkit-transform: rotate(-500deg)} 
+    50%{background-color: green; top: 0px; left: 0px; -webkit-transform: rotate(0deg)}
+    75%{background-color: orange; top: -500px; left: -000px; -webkit-transform: rotate(500deg)}
+    100%{background-color: purple; top: -500px; left: 500px; -webkit-transform: rotate(800deg);} 
+}
+
+.lorem{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+
+}
+
+footer{
+    width: 60%;
+    height: 200px;
+    border-top: 1px solid white;
+    margin: 0 auto;
+}

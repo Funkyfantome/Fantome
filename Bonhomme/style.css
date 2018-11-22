@@ -1,0 +1,187 @@
+body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    height: 1000px;
+}
+.main{
+    display: flex;
+    flex-flow: column wrap;
+    width: 350px;
+    height: 1000px;
+    animation: rotate 1.5s linear 4 normal both;
+}
+.centre{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.bas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.tête{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    background-color: blue;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px; 
+    margin: 0 auto 10px;
+}
+.tête:hover{
+    position: relative;
+    transition: 1s;
+    width: 250px;
+    background-color: rgb(0, 255, 255);
+}
+.tête:hover .oeildroit{
+    position: relative;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    transition: 1s;
+    background-color: blue;
+}
+.tête:hover .oeilgauche{
+    position: relative;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    transition: 1s;
+    background-color: blue;
+}
+.oeildroit{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 100px;
+}
+.oeilgauche{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 100px;
+}
+.tronc{
+    display: flex;
+    width: 200px;
+    height: 400px;
+    background-color: blue;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.brasdroit{
+    display: flex;
+    width: 50px;
+    height: 250px;
+    background-color: blue;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.brasdroit:hover{
+    transform: rotate(-20deg);
+    transition: 1s;
+}
+.brasgauche{
+    display: flex;
+    width: 50px;
+    height: 250px;
+    background-color: blue;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.brasgauche:hover{
+    transform: rotate(20deg);
+    transition: 1s;
+}
+.jambedroite{
+    display: flex;
+    position: relative;
+    top: -70px;
+    width: 50px;
+    height: 200px;
+    background-color: blue;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    animation: rightleg 1s 4 normal;
+}
+/* .jambedroite:hover{
+    position: relative;
+    transform: rotate(20deg);
+    transition: 1s;
+} */
+.jambegauche{
+    display: flex;
+    position: relative;
+    top: -70px;
+    width: 50px;
+    height: 200px;
+    background-color: blue;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    animation: leftleg 1s 1s 4 normal;
+}
+@keyframes leftleg{
+    0%{-webkit-transform: rotate(0deg)}
+    25%{-webkit-transform: rotate(-10deg)}
+    50%{-webkit-transform: rotate(-25deg);}
+    75%{-webkit-transform: rotate(-10deg)}
+    100%{-webkit-transform: rotate(0deg)}
+}
+@keyframes rightleg{
+    0%{-webkit-transform: rotate(0deg);}
+    25%{-webkit-transform: rotate(10deg)}
+    50%{-webkit-transform: rotate(25deg);}
+    75%{-webkit-transform: rotate(10deg)}
+    100%{-webkit-transform: rotate(0deg);}
+}
+/* .jambegauche:hover{
+    position: relative;
+    transform: rotate(-20deg);
+    transition: 1s;
+} */
+@keyframes rotate{
+    0%{-webkit-transform: rotate(0deg); opacity: 1}
+    25%{-webkit-transform: rotate(15deg); opacity: 1}
+    50%{-webkit-transform: rotate(0deg); opacity: 0;}
+    75%{-webkit-transform: rotate(-15deg); opacity: 1;}
+    100%{-webkit-transform: rotate(0deg); opacity: 1;}
+}
+/* @keyframes rotate{
+    0%{-webkit-transform: rotate(0deg) scale(1);}
+    50%{-webkit-transform: rotate(180deg) scale(2);}
+    100%{-webkit-transform: rotate(360deg) scale(1);}
+} */
+/* .tête, .tronc, .brasdroit, .brasgauche, .jambedroite, .jambegauche{
+    animation: chgt-couleur 2s 2 alternate;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+} */
+/* @keyframes chgt-couleur{
+    0%{background-color: blue;}
+    10%{background-color: yellow;}
+    20%{background-color: green;}
+    30%{background-color: red;}
+    40%{background-color: purple;}
+    50%{background-color: magenta;}
+    60%{background-color: maroon;}
+    70%{background-color: black;}
+    80%{background-color: bisque;}
+    90%{background-color: crimson;}
+    100%{background-color: blue;}
+} */

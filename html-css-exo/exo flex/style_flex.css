@@ -1,0 +1,40 @@
+*,html{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    flex-flow: row, wrap;
+}
+
+#header{
+    width: 50%;
+    height: 120px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/* #parent{
+    width: 500px;
+    height: 500px;
+} */
+
+.replique{
+    width: 500px;
+    height: 100px;
+}
+
+ul{
+    display: flex;
+}
+
+ul > li{
+    list-style-type: none;
+    
+}
+
+
+
+
+

@@ -1,0 +1,83 @@
+*,html{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Cambria, Cochin', Georgia, Times, 'Times New Roman', serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: #003355;
+    background-image: url(http://eu.blizzard.com/static/_images/games/sc2/wallpapers/wall1/wall1-1920x1200.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #03031d52;
+}
+
+nav ul{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li{
+    font-size: 50px;
+    list-style-type: none;
+    float: left;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 10px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(190, 190, 199, 0.863);
+}
+
+.submenu{
+    display: none;
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+}
+
+.submenu a{
+    display: block;
+    color: darkgoldenrod;
+}
+
+.table{
+    display: flex;
+    align-items: center;
+}
+
+section{
+    width: 50%;
+    padding: 200px;
+    margin: 0 auto;
+}
+
+/* footer{
+    width: 50%;
+    height: 200px;
+    margin: 0 auto;
+    border-top: 1px solid white;
+} */

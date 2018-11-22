@@ -1,0 +1,19 @@
+body{
+    padding: 50px;
+    margin: 60px;
+}
+td{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+.rouge{
+    background-color: red;
+}
+.gris{
+    background-color: gray;
+}
+.vert{
+    background-color: green;
+}

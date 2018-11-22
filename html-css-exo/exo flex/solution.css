@@ -1,0 +1,40 @@
+h1{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 48px;
+    
+}
+
+.list{
+    border-bottom: 1px dashed black;
+    display: flex;
+    align-items: center;
+    
+}
+
+.number{
+    border-right: 1px solid black;
+    color: #0055cc;
+    display: flex;
+
+
+}
+
+.chanson{
+    text-align: center;
+
+    
+}
+
+.time{
+
+
+
+}
+
+
+

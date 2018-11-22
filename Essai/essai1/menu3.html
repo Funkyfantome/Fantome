@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Titre</h1>
+    </header>
+
+    <nav>
+        <div class="table">
+            <ul>
+                <li class="menu 0">
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li class="menu 1">
+                    <a href="menu1.html">Menu 1</a>
+                </li>
+                <li class="menu 2">
+                    <a href="menu2.html">Menu 2</a>
+                </li>
+                <li class="menu 3">
+                    <a href="menu3.html">Menu 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h3> Join us</h3>
+
+    <section class="form">
+
+        <form method="POST" action="traitement.php">
+            <fieldset> 
+            <legend>Informations personnelles :</legend>
+            Entrez votre prénom :
+            <input type="text" name="prenom" id="prenom"><br><br>
+            Entrez votre nom :
+            <input type="text" name="nom" id="nom"><br><br>
+            <input type="radio" name="sexe" value="homme" id="homme">
+            Homme
+            <input type="radio" name="sexe" value="femme" id="femme">
+            Femme<br><br>
+            Votre date de naissance:
+            <input type="date" name="naissance" id="naissance"><br><br>
+            email : 
+            <input type="email" name="email" id="email" required><br><br>
+
+            Où habitez vous ?<br>
+            <select name="pays">
+                <option value="france">France</option>
+                <option value="belgique">Belgique</option>
+                <option value="allemagne">Allemagne</option>
+                <option value="italie">Italie</option>
+                <option value="espagne">Espagne</option>
+                <option value="pays-bas">Pays-bas</option>
+                <option value="royaume-uni">Royaume-Uni</option>
+                <option value="pologne">Pologne</option>
+                <option value="chine">Chine</option>
+                <option value="japon">Japon</option>
+                <option value="maroc">Maroc</option>
+                <option value="algérie">Algérie</option>
+                <option value="pérou">Pérou</option>
+            </select><br><br>
+
+            Choisissez un mot de passe
+            <input type="password" name="pswd" id="pswd" required><br><br>
+            </fieldset>
+        
+
+    <footer>
+        <p>...</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+*,html{
+    padding: 5px;
+    margin: 5px;
+}
+body{
+    margin: 0px auto;
+    width: 960px;
+    padding: 0px;
+    background-color: lavender;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: -webkit-linear-gradient(botoom, RGBa(240,000,000,0.2), RGBa(240,000,000,0.8));
+    background: -o-linear-gradient(top, RGBa(240,000,000,0.2), RGBa(240,000,000,0.8));
+    background: -moz-linear-gradient(top, RGBa(240,000,000,0.2), RGBa(240,000,000,0.8));
+    background: linear-gradient(to top, RGBa(240,000,000,0.2), RGBa(240,000,000,0.8));
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <form method="POST" action="traitement.php">
+        <fieldset id="section-1">
+            <legend>Identité</legend>
+            <label for="nom">NOM:</label>
+            <input type="text" name="nom" id="nom"><br><br>
+            <label for="prenom">Prénom:</label>
+            <input type="text" name="prenom" id="prenom"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"><br><br>
+        </fieldset>
+
+        <fieldset id="section-2">
+            <legend>Adresse</legend>
+            <label for="rue">Rue:</label>
+            <input type="text" name="rue" id="rue"><br><br>
+            <label for="n°">N°:</label>
+            <input type="number" name="n°" id="n°"><br><br>
+            <label for="codepostal">Code Postal:</label>
+            <input type="number" name="codepostal" id="codepostal"><br><br>
+        </fieldset>
+
+        <fieldset id="section-3">
+            <legend>Compétences</legend>
+            <select name="niveau">
+                <option value="notion">Notions</option>
+                <option value="moyen">Moyen</option>
+                <option value="bon">Bon</option>
+                <option value="excellent">Excellent</option>
+            </select>
+            <input type="checkbox" name="competences" value="html" id="html">
+            <label for="html">HTML:</label><br>
+            <select name="niveau">
+                <option value="notion">Notions</option>
+                <option value="moyen">Moyen</option>
+                <option value="bon">Bon</option>
+                <option value="excellent">Excellent</option>
+            </select>
+            <input type="checkbox" name="competences" value="css" id="css">
+            <label for="css">CSS:</label><br>
+            <select name="niveau">
+                    <option value="notion">Notions</option>
+                    <option value="moyen">Moyen</option>
+                    <option value="bon">Bon</option>
+                    <option value="excellent">Excellent</option>
+            <input type="checkbox" name="competences" value="javascript" id="javascript">
+            <label for="javascript">JavaScript:</label><br>
+            </select>
+            <select name="niveau">
+                    <option value="notion">Notions</option>
+                    <option value="moyen">Moyen</option>
+                    <option value="bon">Bon</option>
+                    <option value="excellent">Excellent</option>
+            <input type="checkbox" name="competences" value="java" id="java">
+            <label for="java">Java</label><br>
+            </select>
+            <select name="niveau">
+                    <option value="notion">Notions</option>
+                    <option value="moyen">Moyen</option>
+                    <option value="bon">Bon</option>
+                    <option value="excellent">Excellent</option>
+            <input type="checkbox" name="competences" value="php" id="php">
+            <label for="php">PHP</label><br>
+            </select>
+            <select name="niveau">
+                    <option value="notion">Notions</option>
+                    <option value="moyen">Moyen</option>
+                    <option value="bon">Bon</option>
+                    <option value="excellent">Excellent</option>
+            <input type="checkbox" name="competences" value="sql" id="sql">
+            <label for="sql">SQL</label><br>
+            </select>
+        </fieldset>
+
+        <input type="reset" value="Annuler">
+        <input class="valider" type="submit" value="Valider">
+
+
+    
+</body>
+</html>

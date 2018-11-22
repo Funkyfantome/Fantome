@@ -1,0 +1,129 @@
+*,html{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'century Gothic', Arial, Helvetica, serif;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(168, 62, 0, 0.664);
+}
+header{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+/* On cible la liste ul enfant de direct de nav */
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+/* On affiche seulement les li correspondant aux onglets de menu en ligne */
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+/* On enlève les puces devat tous les li appartenant au nav */
+nav li{
+    list-style-type: none;
+}
+/* .submenu{
+    display: none;
+} */
+nav{
+    width: 100%;
+    background-color: grey;
+}
+nav > ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: white;
+}
+.submenu{
+    display: none;
+}
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 100000;
+}
+.submenu li{
+    border-bottom: 1px solid #CCC
+}
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 15px;
+    color: white;
+    width: 250px;
+}
+.perso:hover{
+    border-top:5px solid brown;
+    background-color: rebeccapurple
+}
+.map:hover{
+    border-top: 5px solid green;
+    background-color: darkgoldenrod;
+}
+.classe:hover{
+    border-top: 5px solid yellow;
+    background-color: orange;
+}
+.ranked:hover{
+    border-top: 5px solid hotpink;
+    background-color: salmon;
+}
+nav > ul > li:hover a{
+    padding: 10px 30px 20px 30px;
+}
+.perso .submenu{
+    background-color: rgb(150, 150, 60);
+}
+.map .submenu{
+    background-color: rgb(100, 20, 90);
+}
+.classe .submenu{
+    background-color: rgb(50, 80, 130);
+}
+.ranked .submenu{
+    background-color: rgb(190, 90, 50);
+}
+.submenu li:hover a{
+    color: #EEE;
+    font-weight: bold;
+}
+.perso .submenu li:hover{
+    background-color: rgb(100, 120, 30);
+}
+.map .submenu li:hover{
+    background-color: rgb(60, 0, 50);
+}
+.classe .submenu li:hover{
+    background-color: rgb(0, 20, 50);
+}
+.ranked .submenu li:hover{
+    background-color: rgb(140, 50, 20);
+}
+footer{
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: rgb(220, 220, 220);
+    border-top: 2px solid #05F;
+}
+.lorem{
+    width: 50%;
+    margin: auto;
+}

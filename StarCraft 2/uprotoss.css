@@ -1,0 +1,29 @@
+.blueTable {
+    border: 5px solid #01406b;
+    background-color: rgb(211, 199, 174);
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+.blueTable td, th {
+    border: 1px solid rgb(148, 34, 34);
+    padding: 3px 2px;
+  }
+.blueTable tbody td {
+    font-size: 15px;
+  }
+.blueTable tr:nth-child(even) {
+    background: rgb(240, 167, 154);
+  }
+.blueTable thead {
+    background: #6b0d01;
+    background: -moz-linear-gradient(top, #6b0d01 0%, #7e3f3f 66%, rgb(228, 46, 0) 100%);
+    background: -webkit-linear-gradient(top, #6b0d01 0%, #7e3f3f 66%, rgb(228, 46, 0) 100%);
+    background: linear-gradient(to bottom, #6b0d01 0%, #7e3f3f 66%, rgb(228, 46, 0) 100%);
+    border-bottom: 2px solid #444444;
+  }
+.blueTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }

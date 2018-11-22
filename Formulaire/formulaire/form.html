@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+   <form method="POST" action="traitement.php">
+       <fieldset> 
+        <legend>Informations personnelles :</legend>
+       <label for="prenom">Entrez votre prénom : </label>
+       <input type="text" name="prenom" id="prenom"><br><br>
+       <label for="nom">Entrez votre nom : </label>
+       <input type="text" name="nom" id="nom"><br><br>
+       <label for="presentation">Présentation : </label>
+       <textarea name="prez" id="presentation"></textarea><br><br>
+
+       <input type="radio" name="sexe" value="homme" id="homme">
+       <label for="homme"> Un homme</label><br>
+       <input type="radio" name="sexe" value="femme" id="femme">
+       <label for="femme"> Une femme</label><br><br>
+        </fieldset>
+       <label for="pswd">Choisissez un mot de passe : </label>
+       <input type="password" name="pswd" id="pswd" required><br><br>
+
+       <label for="naissance">Votre date de naissance : </label>
+       <input type="date" name="naissance" id="naissance"><br><br>
+
+       Où habitez vous ?<br>
+       <select name="pays">
+           <option value="france">France</option>
+           <option value="belgique">Belgique</option>
+           <option value="allemagne">Allemagne</option>
+           <option value="italie">Italie</option>
+           <option value="espagne">Espagne</option>
+           <option value="pays-bas">Pays-bas</option>
+           <option value="royaume-uni">Royaume-Uni</option>
+           <option value="pologne">Pologne</option>
+           <option value="chine">Chine</option>
+           <option value="japon">Japon</option>
+           <option value="maroc">Maroc</option>
+           <option value="algérie">Algérie</option>
+           <option value="pérou">Pérou</option>
+       </select>
+
+       <label for="email">Votre email : </label>
+       <input type="email" name="email" id="email" required><br><br>
+
+
+
+
+
+       <input type="submit" value="Envoyer">
+   </form>
+
+</body>
+</html>

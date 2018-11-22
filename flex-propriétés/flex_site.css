@@ -1,0 +1,49 @@
+*,html{
+    padding: 0px;
+    margin: 0px;
+}
+
+#main{
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 767px;
+}
+
+#main>div{
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#header{
+    order: 1;
+    height: 120px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#footer{
+    order: 5;
+    height: 120px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#leftm{
+    order: 2;
+    width: 160px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+#rightm{
+    order: 4;
+    width: 200px;
+    border: 1px solid black;
+}
+
+#content{
+    order: 3;
+    flex: auto;
+    border: 1px solid black;
+}

@@ -1,0 +1,29 @@
+div{
+    width: 290px;
+    height: 190px;
+    background-color: gray;
+    border-top: 10px solid red;
+    float: left;
+    
+}
+.d1{
+    border-right: 10px solid green;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.d2{
+    border-right: 10px solid blue;
+    margin-top: 130px;
+}
+.d3{
+    border-right: 10px solid orange;
+    margin-top: 210px;
+}
+.d4{
+    background-color: antiquewhite;
+    width: 200px;
+    border: 5px solid #777;
+    position: fixed;
+    top: 0px;
+    left: 200px;
+}

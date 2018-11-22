@@ -1,0 +1,109 @@
+*,html{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-attachment: fixed;
+    background: -webkit-linear-gradient(-45deg, #5afafd 0%,#e93a27 50%,#5afafd 100%)
+}
+
+#main{
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 767px;
+}
+
+#main>div{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#header{
+    order: 1;
+    width: 100%;
+    height: 120px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#footer{
+    order: 5;
+    width: 100%;
+    height: 120px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+#leftm{
+    order: 2;
+    width: 160px;
+    height: 1000px;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+ul{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+li{
+    list-style-type: none;
+    padding: 50px;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: rgba(255, 242, 67, 0.973);
+}
+
+#rightm{
+    order: 4;
+    width: 300px;
+    display: flex;
+    background-image: url(http://www.supprimer-trojan.com/wp-content/uploads/ps4ux.com_.jpg), url(https://www.destockplus.com/upload/lenovo-x220-i5-spub-1-9fapxq.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px 40px, 0px 240px;
+}
+
+#content{
+    order: 3;
+    width: 50%;
+    flex: auto;
+}
+
+legend{
+    text-align: center;
+    font-weight: bold;
+    color: rgba(255, 242, 67, 0.973);
+}
+
+fieldset{
+    width: 95%;
+    padding: 10px;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    text-align: center;
+    padding: 30px 0px;
+
+}
+
+#prez{
+    width: 25%;
+    text-align: center;
+}
