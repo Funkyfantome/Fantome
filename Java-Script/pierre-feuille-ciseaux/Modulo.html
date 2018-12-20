@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // var compteur;
+    // for (compteur=0; compteur <=36; compteur ++){
+    //     if (compteur % 5 == 0 || compteur % 7 == 0){
+    //         continue;
+    //     }
+    //      if (compteur % 3 == 0){
+    //     document.write("triplette");
+    //     document.write("<br>");
+    //     }
+    //     else{ 
+    //     document.write("Le compteur vaut: " + compteur );}
+
+    //  if (compteur = 27){
+    //     break;
+    //     document.write("<br>");
+    //     }
+    // }
+
+    // while (compteur <36);{
+    //     if (compteur % 5 == 0 || compteur % 7 == 0){
+    //         continue;
+    //     }
+    //     else if (compteur % 3 == 0){
+    //     document.write("triplette");
+    //     document.write("<br>");
+    //     }
+    //     else{ 
+    //     document.write("Le compteur vaut: " + compteur );
+    //     }
+    // }
+    // if (compteur = 27){
+    //     break;
+    //     document.write("<br>");
+    //     }
+
+    //Correction
+
+    var CR = "<br>";
+    document.write("=============================Début de la boucle=============================" + CR);
+    for (var i = 1; i <= 36; i++) {
+        if (i % 5 == 0 || i % 7 == 0) {
+            continue;
+        }
+        if (i % 3 == 0) {
+            document.write("triplette" + CR);
+        } else {
+            document.write("La valeur du compteur est : <strong>" + i + "<strong>" + CR);
+        }
+        if (i == 27) {
+            break;
+        }
+    }
+
+    document.write("=============================Fin de la boucle=============================" + CR);
+    </script>
+</body>
+</html>

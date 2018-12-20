@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>compare tableau</title>
+</head>
+
+<body>
+    <script>
+        var res;
+        var tab1 = [19, 72, 33, 5, 66, 2, 14, 9, 10];
+        var tab2 = [19, 72, 33, 15, 16, 8, 17, 39, 50];
+        var tab3 = [19, 72, 33, 15, 16, 8, 39, 50];
+        var tab4 = [19, 72, 33, 5, 66, 2, 14, 9, 10];
+
+        res = fcompare(tab1, tab2);
+        document.write("resultat = " + res + "<br>");
+
+        res = fcompare(tab1, tab3);
+        document.write("resultat = " + res + "<br>");
+
+        res = fcompare(tab1, tab4);
+        document.write("resultat = " + res + "<br>");
+
+        // ///////////////////////
+        // Fonctions
+        // ///////////////////////
+
+        function fcompare(param1, param2) {
+            if (param1.length != param2.length) {
+                return false;
+            }
+            for (var i = 0; i < param1.length; i++) {
+                if (param1[i] != param2[i]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>

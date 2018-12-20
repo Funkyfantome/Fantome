@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script-entrainement.js"></script>
+</head>
+<body>
+    <script>
+
+        console.log(personnes);
+        console.log(personnes[4]);
+        console.log(personnes.length);
+        personnes[2] = 'Nova';
+        console.log(personnes);
+        personnes.sort();
+        console.log(personnes);
+        personnes.push('Orphéa');
+        console.log(personnes[5]);
+        personnes[6] = 'Tassadar';
+        console.log(personnes);
+        personnes[2] = 'Zeratul';
+        console.log(personnes);
+        personnes.forEach(f1);
+        function f1(para) {
+            console.log(para.toLowerCase());
+        }
+        console.log(personnes2);
+
+        personnes.splice(3,2,'Valeera','Rehgar');
+        console.log(personnes);
+        
+        personnes.reverse();
+        personnes2.reverse();
+        console.log(personnes);
+        console.log(personnes2);
+
+        personnes2[personnes2.length]='Cassia';
+        console.log(personnes2);
+        personnes2.sort();
+        console.log(personnes2);
+        personnes2.reverse();
+        console.log(personnes2);
+        var item = personnes2.pop();
+        console.log(item); 
+        personnes2.push('Zagara');
+        console.log(personnes2);
+        console.log(personnes2[5]);
+        var exist = personnes2.includes('Zagara');
+        console.log(exist);
+        personnes2.push('Abathur');
+        console.log(personnes2);
+        var exist2 = personnes2.includes('Abathur');
+        console.log(exist2);
+
+        for (var i = 0; i< personnes2.length; i++) {
+            console.log(personnes2[i]);
+        }
+
+        var exist3 = personnes2.includes('Cassia');
+        console.log(exist3);
+        delete personnes2[3];
+        delete personnes2[4];
+        console.log(personnes2);
+        personnes2.splice(3,2);
+        console.log(personnes2);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+            function somme(x, y, z) {
+                var som;
+                som = x + y + z;
+                return (som);
+            }
+            function moyenne(x, y, z) {
+
+                return ((x + y + z) / 3);
+            }
+
+            // Pour les calculs de masse en ternaire
+            function max(x, y) {
+                return ((x > y) ? x : y);
+            }
+
+            // On peut avoir plusieurs return dans une fonction
+
+            function salut(s) {
+                if (s == 'm' || s == 'M') {
+                    return "Monsieur";
+                    //document.write("hello");
+                }
+                else if (s == 'f' || s == 'F')
+                    return "Madame";
+                else
+                    return "";
+            }
+    </script>
+
+</head>
+
+<body>
+    <script>
+        var m1;
+        m1 = somme(5, 6, 7);
+        document.write("la somme de (5,6,7) est " + m1 + "<br>");
+        m1 = somme(15, 17, 10);
+        document.write("la somme de (15,17,10) est " + m1 + "<br>");
+    </script>
+
+    <hr>
+
+    <script>
+        var moy1;
+        moy1 = moyenne(5, 6,7 );
+        document.write("la moyenne de (5,6,7) est " + moy1 + "<br>");
+        moy1 = moyenne(15, 17, 10);
+        document.write("la moyenne de (15,17,10) est " + moy1 + "<br>");
+    </script>
+
+    <hr>
+
+    <!-- Pour les calculs de masse en ternaire -->
+
+    <script>
+        m1 = max(5, 6);
+        document.write("le max de (5,6) est " + m1 + "<br>");
+        m1 = max(17, 10);
+        document.write("le max de (17,10) est " + m1 + "<br>");
+    </script>
+
+    <hr>
+
+    <!-- On peut avoir plusieurs return dans une fonction -->
+
+    bonjour
+    <script>document.write(salut("m"))</script> Marc.<br>
+    bonjour
+    <script>document.write(salut("f"))</script> Marie.<br>
+    bonjour
+    <script>document.write(salut("X"))</script> Claude.<br>
+
+</body>
+</html>

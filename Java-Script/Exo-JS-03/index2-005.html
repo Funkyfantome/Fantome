@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+
+
+<div id="container">
+    <p>Les grands joueurs de football:</p>
+    <ul>
+        <li>Pelé</li>
+        <li>Maradonna</li>
+        <li>Platini</li>
+        <li>Zidane</li>
+        <li>Messi</li>
+        <li>Ronaldo</li>
+    </ul>
+    <p>Voir<a href="page.html">ICI</a></p>
+</div>
+
+
+-->
+    <div id="container"></div>
+
+    <script>
+        madiv = document.getElementById("container");
+        
+        var NomJoueurs = [
+            'Pelé', 'Maradonna', 'Platini',
+            'Zidane', 'Messi', 'Ronaldo'
+        ];
+
+        var tagP = document.createElement('p');
+        tagP.appendChild(document.createTextNode('Les grands joueurs de football:'));
+
+        var maliste = document.createElement('ul');
+        var joueur;
+        var l = NomJoueurs.length;
+        for (var i = 0; i < l; i++) {
+            joueur = document.createElement('li');
+            joueur.appendChild(document.createTextNode(NomJoueurs[i]));
+            maliste.appendChild(joueur);
+        }
+
+        var lien = document.createElement("a");
+        lien.href = "page.html";
+        lien.appendChild(document.createTextNode('ICI'));
+        var tagP2 = document.createElement('p');
+        tagP2.appendChild(document.createTextNode('Voir '));
+        tagP2.appendChild(lien);
+
+        madiv.appendChild(tagP);
+        madiv.appendChild(maliste);
+        madiv.appendChild(tagP2);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var d = new Date();
+
+        document.write(" getDay:" + d.getDay() + "<br>"); // 0 : Dimanche ... 6 : Samedi
+        document.write("getdate: " + d.getDate() + "<br>");
+        document.write("getMonth: " + d.getMonth() + "<br>"); // 0 a 11 
+        document.write("getFullYear: " + d.getFullYear() + "<br>");
+        document.write("getYear: " + d.getYear() + "<br>");// a éviter = 1900 
+        document.write("getHours: " + d.getHours() + "<br>");
+        document.write("getMinutes: " + d.getMinutes() + "<br>");
+        document.write("getSeconds: " + d.getSeconds() + "<br>");
+        document.write("getMiliSeconds " + d.getMilliseconds() + "<br>")
+        document.write("<hr>");
+        document.write("getTime: " + d.getTime() + "<br>");
+        document.write("<hr>");
+
+        document.write(",  " + d.getFullYear() + "/" + d.getMonth() + "/" + d.getDay() + "/" + dget);
+        document.write("<hr>");
+        document.write(d.toLocaleDateString()+"<br>"); // Affichage en locale 
+        document.write(d.toLocaleTimeString()+"<br>"); 
+        document.write(d.toLocaleString()+"<br>");
+        document.write("<hr>");
+        document.write(d.toDateString()+"<br>"); // Affichage en anglais
+        document.write(d.toTimeString()+"<br>");
+        document.write(d.toString()+"<br>");
+    </script>
+</body>
+</html>

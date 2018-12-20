@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <script>
+        function chien (para1, para2, para3){
+            this.nom = para1;
+            this.race = para2;
+            this.age = para3;
+            this.presentation = function(){
+            return ("je suis " + this.nom + " de race " + this.race + " et j'ai " + this.age + " ans" + "<br>");
+            }
+            this.setnom = function (para1) {
+                this.nom = para1;
+            }
+            this.getnom = function () {
+                return (this.nom);
+            }
+        }
+        
+        
+        var chien0 = new chien('rex', 'berger allemend', 14);
+        var chien1 = new chien('tobi', 'labrador', 5);
+        var chien2 = new chien('max', 'caniche', 6);
+        var chien3 = new chien('gabi', 'golden retriver', 7);
+        var chien4 = new chien('prune', 'bulldog anglais', 8);
+        var chien5 = new chien('riri', 'beagle', 2);
+        var chien6 = new chien('fifi', 'carlin', 4);
+        var chien7 = new chien('loulou', 'teckel' , 3);
+        var chien8 = new chien('mary', 'shih tzu', 1);
+        var chien9 = new chien('rabit', 'akita', 3);
+        var chenil = new Array(chien0, chien1, chien2, chien3, chien4, chien5, chien6, chien7, chien8, chien9);
+
+
+        
+        document.write(chien0.presentation());
+        chien0.setnom('henry');
+        document.write(chien0.presentation());
+        // document.write("nom = " + chien0.getnom());
+
+        
+    </script>
+
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Race</th>
+            <th>Age</th>
+            <th>Présentation</th>
+        </tr>
+        <script>
+            for (i = 0; i<chenil.length; i++) {
+                document.write("<tr>");
+                document.write("<td>" + chenil[i].nom + "</td>");
+                document.write("<td>" + chenil[i].race + "</td>");
+                document.write("<td>" + chenil[i].age + "</td>");
+                document.write("<td>" + chenil[i].presentation() + "</td>");
+                document.write("</tr>");
+            }
+        </script>
+
+    </table>
+</body>
+</html>

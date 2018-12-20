@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    //Fonctions A
+//1/
+    function func01() {
+        document.write("hello world" + "<br><br>");
+    }
+//2/
+    function func02() {
+        document.getElementsByTagName("p")[0].innerHTML = "hello world";
+    }
+//3/
+    function func03() {
+        document.getElementsByClassName("myclass")[0].innerHTML = "contenu supposer être vide";
+    }
+//4/    
+    function func05A() {
+        document.open("<p class=myp>");
+        document.write("je suis un p de class myp" + "<br><br>");
+    }    
+    function func05B() {
+        document.close("</p>");
+    }
+//5/
+    function func04A() {
+        document.open("<div class=mydiv>");
+        document.write("Je suis une div de class mydiv" + "<br><br>");
+    }
+    function func04B() {
+        document.close("</div>");
+    }
+//6/
+    function func06() {
+        func04A();
+        func05A();
+        func05A();
+    }
+    //Fonctions B
+//1/
+    function func07(pclass) {
+        document.write('<p class="' + pclass + '"></p>');
+        //document.write("<p class=\""+ pclass + "\"></p>");
+    }
+//2/
+    function func08(idDiv, pclass) {
+        document.write('<div id="' + idDiv + '">');
+        func07(pclass);
+        func07(pclass);
+        func04B();
+    }
+    function func09(N) {
+        document.write("<ul>");
+        for (i = 1; i <= N; i++) {
+            document.write("<li>ligne " + i + "</li>")
+        }
+    }
+    //Fonctions C
+//1/
+    //Boucles A : Fonctions
+    function doDW(msg) {
+        document.write(msg)
+    }
+//4/
+    function func10(n, s) {
+        var compteur = 1;
+        do {
+            document.write("<b>"+s+"</b>" + "<br>");
+            compteur++;
+        }
+        while (compteur <= n); 
+
+    }
+//5/
+    function f11(N){
+        var myp = 1;
+        do {
+            func05A();
+            func05B();
+            myp++;
+        }
+        while (myp <= N); 
+    }
+//6/
+    function f12(f, g) {
+        var mydiv = f;
+        for (mydiv = f; mydiv<=f; mydiv +=1) {
+            func04A();
+            func04B();
+        
+        var mydivv= g;
+        for (mydivv = g; mydivv <=g; mydivv +=1) 
+            func05A();
+            func05B();
+        } 
+    }
+
+    dw("<table>");
+    for (var i = 1; i <= 5; i++) {
+        dw("<tr>");
+        for (var j = 1; j <= 5; j++) {
+            dw("<td>");
+            dw(j);
+            dw("</td>");
+        }
+        dw("</tr>");
+    }
+    dw("</table>");
+</script>
+
+<body>
+    <p>
+    </p>
+    <div class="myclass">
+    </div>
+    <script>
+        func01();
+        func02();
+        func03();
+        func06();
+        func07();
+        //func08("div08", "paragraphe08");
+        func10(10, "bonjour");
+        f11(5);
+        f12(4, 6);
+    </script>
+
+    <script>
+        //Boucles A
+    //1/
+        var compteur = 1;
+        do {
+            document.write("<b>Hello world</b>" + "<br>");
+            compteur++;
+        }
+        while (compteur <= 10); 
+    
+
+    
+
+    //2/
+        for (var compteur = 0; compteur <= 11; compteur++) {
+            if (compteur % 2 == 0) {
+                document.write("<p style='color:red'> Hello world. </p>")
+            }
+            else {
+                document.write("<p style='color:blue'> Hello world. </p>")
+            }
+        }
+
+    //3/
+        for (var i = 0; i <= 32; i++) {
+            if (i % 3 || 0) {
+                document.write("compteur =" + i + ", ")
+            }
+            else {
+                continue;
+            }
+        }
+
+    //7/
+
+    </script>
+</body>
+
+</html>

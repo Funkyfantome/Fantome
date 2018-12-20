@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <p>Les grands joueurs de football:</p>
+        <ul id="maliste">
+            <li>Pelé</li>
+            <li>Maradonna</li>
+            <li>Platini</li>
+            <li>Zidane</li>
+            <li>Messi</li>
+            <li>Ronaldo</li>
+        </ul>
+        <p>Voir<a href="page.html">ICI</a></p>
+    </div>
+    <script>
+        //mon_ul = document.getElementById("maliste");
+        mon_ul = document.querySelector("#container > ul");
+
+        var Cruyff = document.createElement('li');
+        Cruyff.appendChild(document.createTextNode('Cruyff'));
+        mon_ul.insertBefore(Cruyff,mon_ul.children[3]);
+
+    </script>
+</body>
+
+</html>

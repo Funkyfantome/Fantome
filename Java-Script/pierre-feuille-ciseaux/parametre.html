@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function maFonction(param1, param2) {
+            document.write("hello " + param1 + ", bienvenue au club.<br>")
+            document.write("Votre numéro est le : " + param2 + "<br><hr>")
+        }
+
+    </script>
+
+    <script>
+        maFonction("Marc",1245);
+        maFonction("Iris",9512);
+        maFonction("Paul",1254);
+        maFonction("Nathalie",1236);
+    </script>
+
+
+<!-- Il est possible d'intégrer d'autres fonctions dans une fonction -->
+
+    <script>
+        function doDW(msg){
+            document.write(msg)
+        }
+        function maFonction(param1, param2) {
+            doDW("hello " + param1 + ", bienvenue au club. <br>")
+            doDW("Votre numéro est le : " + param2 + "<br><hr>")
+        }
+
+    </script>
+
+    <script>
+        maFonction("Marc",1245);
+        maFonction("Iris",9512);
+        maFonction("Paul",1254);
+        maFonction("Nathalie",1236);
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body id='test'>
+    <!-- <div id="dwwm">
+        <strong>L’HyperText Markup Language</strong>, generalement abregé
+         <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language">
+        <strong>HTML</strong></a>, est le langage de balisage conçu pour representer
+        les pages web.<br>C’est un langage permettant d’ecrire de l’hypertexte, d’où son nom.<br>
+        il est promu par le <a href="http://fr.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a>.
+    </div> -->
+
+    <!-- <div id="container">
+        <p>Les grands joueurs de football:</p>
+        <ul>
+            <li>Pelé</li>
+            <li>Maradonna</li>
+            <li>Platini</li>
+            <li>Zidane</li>
+            <li>Messi</li>
+            <li>Ronaldo</li>
+        </ul>
+        <p>Voir<a href="page.html">ICI</a></p>
+    </div> -->
+
+    <div id="container"></div>
+    <button onclick="mafonction()">style 1</button>
+    <button onclick="myfonction()">style 2</button>
+
+    <script>
+        var madiv = document.createElement('div');
+        madiv.id = 'dwwm';
+
+        var bold1 = document.createElement('strong');
+        bold1.appendChild(document.createTextNode("L'HyperText Markup Language"));
+
+        var bold2 = document.createElement('strong');
+        bold2.appendChild(document.createTextNode('HTML'));
+
+        var link1 = document.createElement('a');
+        link1.href = "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language";
+        link1.appendChild(bold2);
+
+        var link2 = document.createElement('a');
+        link2.href = "http://fr.wikipedia.org/wiki/World_Wide_Web";
+        link2.appendChild(document.createTextNode('World Wide Web'));
+
+        madiv.appendChild(bold1);
+        madiv.appendChild(document.createTextNode(', généralement abrégé '));
+        madiv.appendChild(link1);
+        madiv.appendChild(document.createTextNode(', est le langage de balisage conçu pour représenter les pages web.'))
+        madiv.appendChild(document.createElement('br'));
+        madiv.appendChild(document.createTextNode("C'est un langage permettant d'écrire de l'hypertexte, d'où son nom."));
+        madiv.appendChild(document.createElement('br'));
+        madiv.appendChild(document.createTextNode('il est promu par le '));
+        madiv.appendChild(link2);
+        madiv.appendChild(document.createTextNode('.'));
+
+        document.getElementById('container').appendChild(madiv);
+
+        var Nomjoueur = ['Pelé', 'Maradonna', 'Platini',
+            'Zidane', 'Messi', 'Ronaldo'
+        ];
+
+        var p = document.createElement('p');
+        p.appendChild(document.createTextNode('Les grands joueurs de football:'));
+
+        var liste = document.createElement('ul');
+        var joueur;
+        var l = Nomjoueur.length;
+        for (var i = 0 ; i <= l; i++) {
+            joueur = document.createElement('li');
+            joueur.appendChild(document.createTextNode(Nomjoueur[i]));
+            liste.appendChild(joueur);
+        }
+
+        var link3 = document.createElement('a');
+        link3.href = "page.html";
+        link3.appendChild(document.createTextNode('ICI'));
+
+        var p2 = document.createElement('p');
+        p2.appendChild(document.createTextNode('Voir '));
+        p2.appendChild(link3);
+
+        madiv.appendChild(p);
+        madiv.appendChild(liste);
+        madiv.appendChild(p2);
+    </script>
+</body>
+</html>

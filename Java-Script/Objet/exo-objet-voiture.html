@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function voiture(param1, param2, param3) {
+            this.marque = param1;
+            this.annee = param2;
+            this.prix = param3;
+            this.annonce = function() {
+                return (this.marque + " de " + this.annee + " au prix de " + this. prix + "<br>");
+            }
+
+        }
+        var voiture1 = new voiture("Peugeot 206", 1995, 10000);
+        var voiture2 = new voiture("Peugeot 306", 2000, 12000);
+        var voiture3 = new voiture("Peugeot 406", 2002, 14000);
+        var voiture4 = new voiture("Peugeot 506", 2005, 16000);
+        var garage =[voiture1, voiture2, voiture3, voiture4];
+    </script>
+        
+    <ul>
+    <script>
+        for (i = 0; i < garage.length; i++) {
+            str = garage[i].annonce();
+            document.write("<li>" + str + "</li><br>");
+        }
+    </script>
+    </ul>
+
+        
+        
+        
+
+        
+
+
+    </script>
+</body>
+</html>

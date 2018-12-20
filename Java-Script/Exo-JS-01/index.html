@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo JS</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h2>Fonctions A</h2>
+    <script>
+        func01();
+        func02();
+        func03();
+        func05A();
+        func05B();
+        func04A();
+        func04B();
+        func06();
+    </script>
+    <h2>Fonctions B</h2>
+    <script>
+        func07("testClasse07");
+        func08("idDiv", "classP");
+        func09(3);
+    </script>
+    <h2>Boucles A</h2>
+    <script>
+        for (var i = 1; i <= 10; i++) {
+            dw("<strong>Hello World</strong><br>");
+        }
+
+        for (var i = 1; i <= 12; i++) {
+            txtColor = (i % 2 == 0) ? "red" : "blue";
+            dw('<span style="color:' + txtColor + '">Hello World</span><br>');
+        }
+
+        func01_32();
+
+        funcRepeat(6, "texte à repeter");
+
+        func10(8);
+
+        func11(3, 2);
+
+        dw("<table>");
+        for (var i = 1; i <= 5; i++) {
+            dw("<tr>");
+            for (var j = 1; j <= 5; j++) {
+                dw("<td>");
+                dw(j);
+                dw("</td>");
+            }
+            dw("</tr>");
+        }
+        dw("</table>");
+    </script>
+    <h2>Fonctions C</h2>
+    <div id="mydiv"></div>
+    <div id="mydiv2"></div>
+    <script>
+        func12("remplacer le texte de la div<br>");
+        func13("rajouter le texte à la div<br>");
+
+        func14("mydiv2", "1 - text à mettre en gras ou en span<br>");
+        func14("mydiv2", "2 - text à mettre en gras ou en span<br>");
+
+        func15("myUL1", "H");
+        func15("myUL2", "V");
+
+        func16("Accueil", "Blog", "Contact");
+
+    </script>
+    <h2>Script 6/</h2>
+    <script>
+        dw('<div id="header">');
+        func16("Accueil", "Blog", "Contact");
+        func04B();
+        dw('<div id="contenu">');
+        func11(2, 2);
+        func04B();
+        dw('<div id="footer">');
+        dw('<p id="pfooter">');
+        func14("pfooter", "2018 – copyright DWWM – Mustapha");
+        func05B();
+        func04B();
+    </script>
+
+</body>
+
+</html>

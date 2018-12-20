@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+//         function compare(x, y) {
+//     return x - y;
+// }
+    </script>
+</head>
+<body>
+    <script>
+        var chiffres = [[7,8], 59, 6, 73, [46,5], 24, 3, 36, [4,5], 88, 9, 202, [1,2], 18, [22,89],];
+        str = chiffres.join("  _  ");
+        document.write("Avant le tri : <br>" + str);
+        document.write("<br><br>");
+
+        // var chiffres2 = chiffres.sort();
+        // str = chiffres2.join(" _ ");
+        // document.write("Apres le tri standard : <br>" + str);
+        // document.write("<br><br>");
+
+        var chiffres3 = chiffres.sort(tri_numerique1);
+        str = chiffres3.join(" _ ");
+        document.write("Apres le premier tri sans 2D avec fonction : <br>" + str);
+        document.write("<br><br>");
+
+        var chiffres4 = chiffres.sort(tri_numerique2);
+        str = chiffres4.join(" _ ");
+        document.write("Apres le tri avec une fonction : <br>" + str);
+        document.write("<br><br>");
+
+        var mélange = [[8,9],'Nova',[19,2],[22.17],'Orphéa',[5,6],'Arthas'];
+        str = mélange.join("_");
+        document.write("Avant modif : <br>" + str);
+        document.write("<br><br>");
+
+        var mélange2 = mélange.sort();
+        str = mélange2.join("_");
+        document.write("Apres un sort : <br>" + str);
+        document.write("<br><br>");
+
+        var mélange3 = mélange.sort(tri_numerique2);
+        str = mélange3.join(" _ ");
+        document.write("Apres le tri numérique 2 : <br>" + str);
+        document.write("<br><br>");
+
+
+
+        function tri_numerique1(a, b) {
+            if (a < b) {
+                return -1;
+            } else if (a > b) {
+                return 1
+            } else {
+                return 0;
+            }
+        }
+
+        function tri_numerique2(a, b) {
+            if (a[0] < b[0]) {
+                return -1;
+            } 
+            else if (a[0] > b[0]) {
+                return 1
+            }
+            else {
+                if (a[1] < b[1]) {
+                    return -1;
+                }
+                else if (a[1] > b[1]){
+                    return 1
+                }
+                else {
+                    return 0;
+                }
+
+                
+            }
+        }
+
+
+
+        // console.log(chiffres[2]);
+
+        // var exist = chiffres.includes(9);
+        // console.log(exist);
+        // console.log(chiffres);
+
+        // chiffres.push(10);
+        // console.log(chiffres);
+
+        // chiffres[2] = [11,12];
+        // console.log(chiffres);
+
+        
+        // chiffres.sort(compare);
+        // console.log(chiffres);
+        // console.log(chiffres[1]);
+
+        // chiffres.push(20);
+        // console.log(chiffres);
+
+        // chiffres.sort(compare);
+        // console.log(chiffres);
+
+        // var mélange = [1,[8,9],'Nova','Orphéa',4,[5,6],'arthas'];
+        // console.log(mélange);
+        // mélange.sort();
+        // console.log(mélange);
+
+        // mélange.push(3);
+        // console.log(mélange);
+        // mélange.sort();
+        // console.log(mélange)
+
+    </script>
+</body>
+</html>

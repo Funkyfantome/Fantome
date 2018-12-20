@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+
+    function max(param1, param2) {
+        return ((param1 > param2) ? param1 : param2);
+    }
+    function max3(param1, param2, param3) {
+        var d = max(param1, param2);
+        return ((d > param3) ? d : param3); 
+        //Return max (d, param3)
+    }
+
+    //correction simplifié
+
+    function max(a, b) {
+        return ((a > b) ? a : b);
+    }
+
+    function max3(a, b, c) {
+        return max(max(a, b), c);
+    }
+
+</script>
+
+<body>
+
+    <script>
+        var m1;
+        m1 = max(5, 6);
+        document.write("le max de (5,6) est " + m1 + "<br>");
+        m1 = max3(17, 10, 5);
+        document.write("le max de (17,10,5) est " + m1 + "<br>");
+    </script>
+
+</body>
+
+</html>

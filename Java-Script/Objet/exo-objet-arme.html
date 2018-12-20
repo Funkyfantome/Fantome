@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Arme(nom, type) {
+            this.Nom = nom;
+            if (type == "arc" || type == "sabre" || type == "lance") {
+                this.type = type;
+            }else {
+                alert("Vous vous êtes trompé d'arme");
+            }
+        }
+
+        function Player(pseudo, email, type,) {
+            this.pseudo = pseudo;
+            this.email = email;
+            if (type ==" chevalier" || type == "archer" || type == "fantassin") {
+                this.classe = type;
+            }else{
+                alert("vous n'avez pas choisit la bonne classe")
+            }
+            this.setclasse = function(type){
+            if (type ==" chevalier" || type == "archer" || type == "fantassin") {
+                this.classe = type;
+            }else{
+                alert("vous n'avez pas choisit la bonne classe")
+            }
+        } 
+            getclasse() = function() {
+                return (this.classe);
+            }
+            var joueur = [];
+            var j0 = new joueur ("newoob", "chevalier", "newoob.gmail.com", w1,);
+            var j1 = new joueur ("newoob", "archer", "newoob.gmail.com",  w2);
+            var j2 = new joueur ("newoob", "fantassin", "newoob.gmail.com", w3);
+            joueur[0] = j0;
+            joueur[1] = j1;
+            joueur[2] = j2;
+
+            var arme = [];
+            var w1 = new weapon ("arc", "sabre");
+            var w2 = new weapon ("arc", "lance");
+            var w3 = new weapon ("sabre", "lance");
+            weapon [0] = w0;
+            weapon [1] = w1;
+            weapon [2] = w2;
+
+
+            this.presentation() = function () {
+                document.write("mon peudo est " + this.pseudo + " je joue un " + this.type + "avec comme armes : " + w1);
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>

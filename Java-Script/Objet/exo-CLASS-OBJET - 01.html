@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>voiture</title>
+    <style>
+    ul, li{
+        list-style: none;
+    }
+    .annee{
+        color: red;
+    } 
+    </style>
+</head>
+
+<body>
+    <script>
+        function voiture(marque, annee, prix) {
+            this.marque = marque;
+            this.annee = annee;
+            this.prix = prix;
+            this.annonce = function () {
+                return ("Voiture de marque <strong>" + this.marque+"</strong> de <span class='annee'>" + this.annee + "</span> pour la modique somme de <u>" +this.prix+"</u> Euro");
+                //return ("Voiture de marque " + this.marque+" de " + this.annee + " pour la modique somme de " +this.prix+" Euro");
+                
+            }
+        }    
+
+        var garage = [];
+        var v1 = new voiture("Renault Clio",2011, 10500);;
+        garage[0] = v1;
+        garage[1]  = new voiture("Fiat Tipo",2017, 14500);
+        garage[2]  = new voiture("Citroen Picasso",20116, 24500);
+        garage[3]  = new voiture("Ferrari F9",1994, 44500);
+                                
+        // garage[garage.length] = new voiture("Renault Clio",2011, 10500);
+        // garage[garage.length]  = new voiture("Fiat Tipo",2017, 14500);
+        // garage[garage.length]  = new voiture("Citroen Picasso",20116, 24500);
+        // garage[garage.length]  = new voiture("Ferrari F9",1994, 44500);
+
+
+    </script>
+    <h1>Garage "la Joie des DWWM"</h1>
+    <ul>
+        <script>
+            for(var i = 0 ; i< garage.length; i++){
+                document.write("<li>"+garage[i].annonce()+"</li><br>");
+            }    
+        </script>
+
+    </ul>
+</body>
+
+</html>

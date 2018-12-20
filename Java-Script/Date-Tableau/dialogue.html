@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- dialogue de type modale -->
+    <script>
+        alert("attention")
+    </script>
+    <script>
+        //permet de rentrer une valeur
+        rep = prompt("Entrez votre nom");
+        document.write("rep :" + rep + "<br>");
+        rep = prompt("Entrez votre prenom : ", "Brian");
+    </script>
+    <script>
+        //permet de répondre a une demande
+        document.write("rep = " + rep + "<br>");
+        if (rep) {
+            document.write("vous avez choisi : OUI / VALIDER / OK / YES" + "<br>");
+        } else {
+            document.write("vous avez choisi : NON / ANNULER / NO / CANCEL" + "<br>");
+        }
+    </script>
+</body>
+</html>

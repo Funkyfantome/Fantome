@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // var compteur;
+    // for (compteur =0; compteur < 13; compteur +=1){
+    //     document.write("Le compteur vaut: " + compteur);
+    //     document.write("<br>");
+    // } 
+
+
+    // var compteur;
+    // for (compteur =0; compteur < 13; compteur +=1){
+    //     document.write("Le compteur vaut: " + compteur);
+    //     if (compteur == 5) {
+    //         break;
+    //     }
+    //     document.write("<br>");
+    // } 
+
+    //"break" Casse la procédure et permet de passer a l'instruction suivante
+    
+    var compteur;
+    for (compteur =0; compteur < 13; compteur +=1){
+        
+        if (compteur == 5 || compteur == 6) {
+            continue;
+        }
+        document.write("Le compteur vaut: " + compteur);
+        document.write("<br>");
+    } 
+
+    //Permet de sauter le 5 et le 6 tout en continuant la boucle
+    </script>
+</body>
+</html>

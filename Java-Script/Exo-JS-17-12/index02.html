@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style02.css">
+</head>
+<body>
+    <div id = "container">
+        <p id = "note">ceci est un paragraphe de test</p>
+    </div>
+
+    <script>
+        // Méthode simple:
+        var myp = document.getElementById("note");
+        myp.className="note-importante";
+
+        // Méthode avec sécurité:
+        // var myp = document.getElementById('note');
+        // if (p) {
+        //     p.className = 'note-importante';
+        // }
+    </script>
+</body>
+</html>

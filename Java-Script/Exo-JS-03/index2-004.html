@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- example4
+pour vous exercer à créer des elements html en DOM et javascript :
+recréer le bout de html suivant dans la div "container" vide:
+
+<div id="dwwm">
+    <strong>L’HyperText Markup Language</strong>, generalement abregé
+     <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language">
+    <strong>HTML</strong></a>, est le langage de balisage conçu pour representer
+    les pages web.<br>C’est un langage permettant d’ecrire de l’hypertexte, d’où son nom.<br>
+    il est promu par le <a href="http://fr.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a>.
+</div>
+
+-->
+    <div id="container"></div>
+
+    <script>
+        var madiv = document.createElement('div');
+        madiv.id = 'dwwm';
+
+        var bold1 = document.createElement('strong');
+        bold1.appendChild(document.createTextNode("L'HyperText Markup Language"));
+
+        var bold2 = document.createElement('strong');
+        bold2.appendChild(document.createTextNode('HTML'));
+
+        var link1 = document.createElement('a');
+        link1.href = 'https://fr.wikipedia.org/wiki/Hypertext_Markup_Language';
+        link1.appendChild(bold2);
+
+        var link2 = document.createElement('a');
+        link2.href = 'http://fr.wikipedia.org/wiki/World_Wide_Web';
+        link2.appendChild(document.createTextNode('World Wide Web'));
+
+        madiv.appendChild(bold1);
+        madiv.appendChild(document.createTextNode(', generalement abregé '));
+        madiv.appendChild(link1);
+        madiv.appendChild(document.createTextNode(', est le langage de balisage crée pour representer les pages web.'));
+        madiv.appendChild(document.createElement('br'));
+        madiv.appendChild(document.createTextNode("C'est un langage permettant d'ecrire de l'hypertexte, d'où son nom."));
+        madiv.appendChild(document.createElement('br'));
+        madiv.appendChild(document.createTextNode('il est promu par le '));
+        madiv.appendChild(link2);
+        madiv.appendChild(document.createTextNode('.'));
+
+
+        document.getElementById('container').appendChild(madiv);
+
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function doDW(msg){
+            document.write(msg)
+        }
+        function maFonction(param1, param2, param3, param4, param5) {
+            doDW("hello " + param1 + ", bienvenue au club.<br>")
+            doDW("Votre numéro est le : " + param2 + "<br>")
+            doDW("Veuillez vous rendre en salle " + param3 + "<br>")
+            doDW(param4 + " vous recevera à votre arrivé <br>")
+            doDW("Il vous demandera votre numéro d'inscription, ce dernier étant le : " + param5 + "<br><hr>")
+        }
+
+    </script>
+
+    <script>
+        maFonction("Marc", 1245, "A3", "Mr Exter", "01597463N2");
+        maFonction("Iris", 9512, "N2", "Mme Gratianna", "05943547M4" );
+        maFonction("Paul", 1254, "R6", "Mr Gareth", "48963257L6");
+        maFonction("Nathalie", 1236, "F5", "Mme Dupuis", "789115647P7");
+    </script>
+</body>
+</html>

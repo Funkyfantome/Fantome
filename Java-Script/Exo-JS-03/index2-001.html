@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Example 1
+
+    On a une div : <div id="container">. Dans cette div on a le code html suivant :
+
+Lien vers une page <a href="#">contact</a> avec un formulaire pour laisser vos coordonnées.
+
+     - Modifier par javascript le lien pour qu'il mène vers "/page/contact.html" -->
+
+    <div id="container">
+        Lien vers une page <a href="#">contact</a> avec un formulaire pour laisser vos coordonnées.
+    </div>
+
+    <script>
+
+        var madiv = document.getElementById('container');
+        var link = madiv.getElementsByTagName('a')[0];
+        link.href = '/page/contact.html';
+             /*
+             var madiv = document.getElementById('container');    
+             if (madiv) {
+                 var link = madiv.getElementsByTagName('a')[0];    
+                 if (link) {
+                     link.href = '/page/contact.html';
+                 }
+             }
+             */
+    </script>
+</body>
+
+</html>

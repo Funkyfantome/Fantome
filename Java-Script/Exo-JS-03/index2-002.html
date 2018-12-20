@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- Example 2
+On a une div : <div id="container">. Dans cette div on a le code html suivant :
+
+<p id="note">ceci est un paragraphe de test</p>
+
+Modifier par javascript le tag de paragraphe pour y ajouter une class "note-importante" 
+-->
+<div id="container">
+    <p id="note">ceci est un paragraphe de test</p>
+</div>
+
+<script>
+
+    var p = document.getElementById('note');
+
+    if (p) {
+        p.className = 'note-importante';
+    }
+</script>
+</body>
+</html>

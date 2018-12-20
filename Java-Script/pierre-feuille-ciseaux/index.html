@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="essai">
+        ici le body
+    </p>
+    <script>
+        var mois=12;
+        if(mois<=2){
+            msg="hiver"
+        }
+        else if(mois>=3 && mois<=5){
+                msg="printemps";
+        }
+        else if(mois>=6 && mois<=8){
+                msg="été";
+        }
+        else if(mois>=9 && mois<=10){
+                msg="autonne";
+        }
+        else if(mois>=11){
+            msg="hiver";
+        }
+        else{
+            msg="erreur";
+        }
+        document.getElementById("essai").innerHTML= msg;
+    </script>
+
+        <button onclick="myFunction()">Click me</button>
+        
+
+        <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+        document.getElementById("demo").style.color="blue";
+        document.getElementsByTagName("body")[0].style.backgroundColor="purple";
+        }
+    </script>
+    <script>
+        var note=5;
+        if(note<5){
+            document.getElementById("essai").innerHTML="Médiocre";
+        }
+        else if(note<10){
+            document.getElementById("essai").innerHTML="Passable";
+        }
+        else if (note<15){
+            document.getElementById("essai").innerHTML="Bon";
+        }
+        else{
+            document.getElementById("essai").innerHTML="Très Bon";
+        }
+
+
+        if(note<5){
+            msg="Médiocre";
+        }
+        else if(note<10){
+            msg="Passable";
+        }
+        else if (note<15){
+            msg="Bon";
+        }
+        else{
+            msg="Très Bon";
+        }
+        document.getElementById("essai").innerHTML= msg;
+        ici
+    </script>
+     <script>
+        a=5*7;
+        b=7*5;0
+        document.getElementById("essai").innerHTML="5+7 + 7+5 + 8+5 + 9+9 ="+ b;
+        document.getElementById("essai").innerHTML="<p> ici in code html valide</p>"
+        document.getElementById("essai").style ="color:red; font-size:24px;"
+    </script>
+
+</body>
+</html>

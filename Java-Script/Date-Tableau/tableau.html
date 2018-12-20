@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var personnes = ['Marc','Paul','Veronique',25,[1,2,3]];
+        var personnes2 = new Array('Marc','Paul','Veronique',25,[1,2,3]); //autre écriture.
+
+        console.log(personnes[4])// il Affichera [1,2,3] car c'est le 4eme element en partant de 0 du tableau.
+
+        console.log(personnes.length); //Permet d'afficher le nombre d'élément présent dans le tableau, ici 5.
+
+        // Pour changer un élément dans le tableau.
+        personnes[1] = 'Martine';
+        console.log(personnes[1]) // Et on obtiendra Martine à la place de Paul.
+
+        personnes.sort();
+        console.log(personnes); // Permet de trier par ordre alphabétique le contenu du tableau. (les chiffres sont prioritaire aux majuscules et les majuscules sont prioritaire au minuscules )
+
+        personnes.push("Alex");
+        console.log(personnes); //Permet de placer le prénom Alex au bout du tableau.
+
+        personnes[5]= 'Dupont';
+        console.log(personnes); //Permet de placer Dupont en 5eme position dans le tableau. Si une valeur été déjà présente, elle est remplacé.
+
+        personnes[personnes.length]='michel';
+        console.log(personnes); //Permet d'être sûr de placer un élément supplémentaire au bout du tableau.
+
+        var item = personnes.pop();
+        console.log(personnes);
+        console.log(item); //Fonction contraire de Push. Permet de retirer un élément du tableau en partant de la fin.
+
+        delete personnes[2];
+        console.log(personnes); //Permet de supprimer le 2eme élément du tableau mais affichera "1 empty slot".
+
+        personnes.splice(2,1);
+        console.log(personnes); //Permet de supprimer un élément et de si besoin le remplacer par un autre élément.
+                                //1: Position de départ, 2: Combien d'éléments on supprime, 3: Ajout d'élément de remplacement.
+        
+        var str = personnes.join(", ");
+        console.log(str); // Permet de transformer le texte en phrase et d'y ajouter ce que l'on souhaite après chaque élément.
+
+        personnes.reverse();
+        console.log(personnes); // Inverse de personne.sort. Permet de trier les éléments par ordre inverse alphabétique.
+
+        var exist = personnes.includes("Marc");
+        console.log(exist); // Permet de voir si l'élément Marc existe bel et bien dans le tableau.
+
+        for (var i = 0; i< personnes.length; i++) {
+            console.log(personnes[i]);
+        } // Permet d'extraire chaque élément du tableau par itération de i jusqu'à la fin de la boucle.
+
+        personnes.forEach(func01);
+        function func01(param) {
+            console.log(param.toUpperCase());
+        } //Permet de parcourir chaque élément du tableau qui seront considéré comme paramètre les uns après les autres dans la boucle et affichera ainsi les élément en lettre capitale. Ne fonctionne pas avec les chiffres.
+
+        var personnes = ['Xavier','Paul','Marc'];
+        var personnes2 = ['etienne','Alex','Marie','Fred'];
+        var people = personnes2.concat(personnes);
+        console.log(people); // Permet de concaténer le contenu du deuxième tableau dans le premier tableau. 
+    </script>
+</body>
+</html>

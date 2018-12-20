@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- example 3
+on a oublié de mettre en gras le contenu de la div "container"
+
+allez y en JS svp
+
+-->
+    <div id="container">
+
+        ceci est un texte qui doit etre en gras.
+
+    </div>
+
+    <script>
+        var contenu = document.getElementById('container').innerHTML;
+
+        document.getElementById('container').innerHTML = '<strong>' + contenu + '</strong>';
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta pseudo="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function arme (nom, type) {
+            this.nom = nom;
+            if (type == "arc" || type == "sabre" || type == "lance") {
+                this.type = type;
+            }
+            else {
+                alert("Vous n'avez pas choisi une des armes disponibles");
+            }
+            // this.settype = function (type) {
+            //     if (type == "arc" || type == "sabre" || type == "lance") {
+            //         this.type = type;
+            //     }
+            // else {
+            //     alert("Vous n'aver pas choisi une des armes disponibles");
+            // }
+
+            // }
+
+            this.gettype = function() {
+                return (this.type);
+            }
+        }
+
+        var weapon = [];
+            weapon[0] = new arme("Arc d'artémis", "arc");
+            weapon[1] = new arme("Arc elfique", "arc");
+            weapon[2] = new arme("Cimeterre", "sabre");
+            weapon[3] = new arme("Sabre de Quelag", "sabre");
+            weapon[4] = new arme("lance du zodiaque", "lance");
+            weapon[5] = new arme("Pertuisane", "lance");
+        
+        function player (pseudo, email, type, arme1, arme2) {
+            alert("pseudo "+pseudo);
+            this.pseudo = pseudo;
+            this.email = email;
+            if (type == "chevalier" || type == "archer" || type == "fantassin") {
+                this.type = type;
+            }
+            else {
+                alert("Vous n'avez pas choisi une des classes disponibes");
+            }
+
+            // this.setType = function (type) {
+            //     if (type == "chevalier" || type == "archer" || type == "fantassin") {
+            //         this.type = type;
+            //     }
+            //     else {
+            //         alert("Vous n'avez pas choisi une des classes disponibles");
+            //     }
+            // }
+            this.getType = function() {
+                return (this.type);
+            }
+
+            this.arme = [arme1, arme2];
+        
+
+            this.presentation = function() {
+                return("mon pseudo est " + this.pseudo + " je suis un " + this.type + " et j'ai comme arme " + this.arme[0].nom + " (type : " + this.arme[0].gettype() + ") et " + this.arme[1].nom + " (type : " + this.arme[1].gettype() + ").<br>");
+            }
+        }
+        
+
+        var players = [];
+            players [0] = new player("Gaar", "gaar.gmail.com", "chevalier", weapon[2], weapon[4]);
+            players [1] = new player("Hayato", "hayato.gmail.com", "archer", weapon[0], weapon[3]);
+            players [2] = new player("Girou", "girou.gmail.com", "fantassin", weapon[1], weapon[2]);
+
+            var i = 0;
+            for (i == 0; i < players.length; i++) {
+                console.log(player[i]);
+                document.write(players[i].presentation());
+            }
+
+            
+
+        
+    </script>
+</body>
+</html>
